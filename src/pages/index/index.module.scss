@@ -1,0 +1,18 @@
+.page {
+    display: flex;
+    align-items: flex-start;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 0 24px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.input {
+    position: sticky;
+    bottom: 0;
+}

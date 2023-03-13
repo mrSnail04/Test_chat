@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    gap: 8px;
+
+    &[data-is-my="true"] {
+        justify-content: flex-end;
+
+        & .message {
+            background: rgba(64, 126, 201, 0.16);
+        }
+    }
+
+    & + & {
+        margin-top: 12px;
+    }
+}
+
+.user {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #201F1E;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.message {
+    padding: 8px 12px;
+    background: #F3F3F3;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #201F1E;
+    max-width: 29rem;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-end;
+    color: #201F1E;
+}
+
+.info {
+    display: inline-flex;
+    color: #605E5C;
+    margin-left: 12px;
+}

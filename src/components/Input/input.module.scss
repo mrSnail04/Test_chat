@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    background: #FFFFFF;
+}
+
+.input {
+    position: relative;
+    padding: 10px 16px;
+    gap: 10px;
+    border: 1px solid #A19F9D;
+    border-radius: 4px;
+    max-height: 45px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:empty::before {
+        content: attr(data-placeholder);
+        position: absolute;
+        left: 16px;
+        top: 10px;
+        color: #A19F9D;
+    }
+}
+
+.btn_group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #F3F3F3;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}

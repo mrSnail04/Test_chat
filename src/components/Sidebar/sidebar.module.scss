@@ -1,0 +1,17 @@
+.sidebar {
+  max-width: 360px;
+  box-shadow: inset -1px 0px 0px rgba(32, 31, 30, 0.12);
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #201F1E;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  margin: 0;
+}
